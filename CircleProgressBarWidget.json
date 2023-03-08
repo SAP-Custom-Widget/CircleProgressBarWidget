@@ -1,0 +1,99 @@
+{
+    "id": "com.rohitchouhan.sap.circleprogressbarwidget",
+    "version": "1.0.0",
+    "name": "Circle Progress Bar Widget",
+    "description": "SAC Custom Widget to add beautiful and animated circle progress bar in SAP Analytics Cloud Application",
+    "newInstancePrefix": "CircleProgressBarWidget",
+    "vendor": "Rohit Chouhan",
+    "eula": "",
+    "license": "MIT",
+    "icon": "https:\/\/raw.githubusercontent.com\/SAP-Custom-Widget\/CircleProgressBarWidget\/main\/icon.png",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "com-rohitchouhan-sap-circleprogressbarwidget",
+            "url": "https:\/\/cdn.jsdelivr.net\/gh\/SAP-Custom-Widget\/CircleProgressBarWidget@1.0.0\/CircleProgressBarWidget.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        },
+        {
+            "kind": "builder",
+            "tag": "com-rohitchouhan-sap-circleprogressbarwidget-builder",
+            "url": "https:\/\/cdn.jsdelivr.net\/gh\/SAP-Custom-Widget\/CircleProgressBarWidget@1.0.0\/CircleProgressBarWidget_Builder.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "percentage": {
+            "description": "Percentage",
+            "type": "integer",
+            "default": 75
+        },
+        "barColor": {
+            "description": "Bar Color",
+            "type": "string",
+            "default": "#03ff4f"
+        },
+        "emptyBarColor": {
+            "description": "Empty Bar Color",
+            "type": "string",
+            "default": "#ededed"
+        }
+    },
+    "methods": {
+        "setPercentage": {
+            "description": "Set Percentage",
+            "parameters": [
+                {
+                    "name": "percentage",
+                    "type": "integer",
+                    "description": "Percentage"
+                }
+            ],
+            "body": "this.percentage = percentage;"
+        },
+        "getPercentage": {
+            "returnType": "integer",
+            "description": "Return Percentage",
+            "body": "return this.percentage;"
+        },
+        "setBarColor": {
+            "description": "Set Bar Color",
+            "parameters": [
+                {
+                    "name": "barColor",
+                    "type": "string",
+                    "description": "Bar Color"
+                }
+            ],
+            "body": "this.barColor = barColor;"
+        },
+        "getBarColor": {
+            "returnType": "string",
+            "description": "Return Bar Color",
+            "body": "return this.barColor;"
+        },
+        "setEmptyBarColor": {
+            "description": "Set Empty Bar Color",
+            "parameters": [
+                {
+                    "name": "emptyBarColor",
+                    "type": "string",
+                    "description": "Empty Bar Color"
+                }
+            ],
+            "body": "this.emptyBarColor = emptyBarColor;"
+        },
+        "getEmptyBarColor": {
+            "returnType": "string",
+            "description": "Return Empty Bar Color",
+            "body": "return this.emptyBarColor;"
+        }
+    },
+    "events": {
+        "onClick": {
+            "description": "User Clicked."
+        }
+    }
+}
