@@ -10,6 +10,7 @@ SAC Custom Widget to add beautiful and animated circle progress bar in SAP Analy
 ## Installation
 To use this widget in your SAP application, follow these steps:
 
+<a target="_blank" href="https://sap-custom-widget.github.io/?dl=CircleProgressBarWidget"><img width="150" src="https://raw.githubusercontent.com/SAP-Custom-Widget/sap-custom-widget.github.io/main/download.png"/></a>
 - Download the `CircleProgressBarWidget.json` file from the URLs specified in the webcomponents property of the JSON.
 - Go to your SAC Portal, select Analytic Application from the left side bar, and then go to the Custom Widget tab.
 - Click on the + icon on the right side and select the `CircleProgressBarWidget.json` file that you downloaded.
